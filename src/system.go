@@ -311,7 +311,7 @@ func setDeviceID() {
 func createStreamingURL(streamingType, playlistID, channelNumber, channelName, url string, backup_url_1 string, backup_url_2 string, backup_url_3 string) (streamingURL string, err error) {
 
 	var streamInfo StreamInfo
-	var serverProtocol string
+	// var serverProtocol string
 
 	if len(Data.Cache.StreamingURLS) == 0 {
 		Data.Cache.StreamingURLS = make(map[string]StreamInfo)
