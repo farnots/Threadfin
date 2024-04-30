@@ -339,16 +339,16 @@ func createStreamingURL(streamingType, playlistID, channelNumber, channelName, u
 	switch streamingType {
 
 	case "DVR":
-		serverProtocol = System.ServerProtocol.DVR
+		// serverProtocol = System.ServerProtocol.DVR
 
 	case "M3U":
-		serverProtocol = System.ServerProtocol.M3U
+		// serverProtocol = System.ServerProtocol.M3U
 
 	}
 
 	if Settings.ForceHttps {
 		if Settings.HttpsThreadfinDomain != "" {
-			serverProtocol = "https"
+			// serverProtocol = "https"
 			System.Domain = Settings.HttpsThreadfinDomain
 		}
 	}
